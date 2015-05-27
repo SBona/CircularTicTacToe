@@ -11,16 +11,14 @@
 @interface SNBSettingsScreenViewController : UIViewController
 
 
-
 //Settings label setup
-@property (weak, nonatomic) IBOutlet UILabel *WedgeCountDisplay;
 @property (weak, nonatomic) IBOutlet UILabel *RingCountDisplay;
-
+@property (weak, nonatomic) IBOutlet UILabel *WedgeCountDisplay;
 
 
 //Stepper setup
 @property(nonatomic,retain) IBOutlet UIStepper *ringStepperObject;
-@property(nonatomic,retain) IBOutlet UIStepper *wedgeStepperObject;
+@property (nonatomic, retain) IBOutlet UIStepper *wedgeStepperObject;
 
 - (IBAction)ringStepper:(UIStepper *)sender;
 - (IBAction)wedgeStepper:(UIStepper *)sender;

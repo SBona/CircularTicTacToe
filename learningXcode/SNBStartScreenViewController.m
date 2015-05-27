@@ -8,16 +8,13 @@
 
 #import "SNBStartScreenViewController.h"
 
-UIColor * backgroundColor = nil;
+UIColor *backgroundColor = nil;
 
 SNBStartScreenViewController *vSplashScreen;
 
 @interface SNBStartScreenViewController ()
 
-
-
 @end
-
 @implementation SNBStartScreenViewController
 
 

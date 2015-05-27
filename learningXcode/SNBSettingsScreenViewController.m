@@ -9,7 +9,6 @@
 #import "SNBSettingsScreenViewController.h"
 
 @interface SNBSettingsScreenViewController ()
-
 @end
 
 @implementation SNBSettingsScreenViewController
@@ -26,6 +25,10 @@
     WedgeCountDisplay.text = [NSString stringWithFormat: @"%d", (int)ctrlStepper.value];
     
 }
+
+- (IBAction)aadsf:(id)sender {
+}
+
 - (IBAction)ringStepper:(UIStepper *)ctrlStepper
 {
     NSLog(@"New Value = %d", (int)ctrlStepper.value);
@@ -74,4 +77,6 @@
 }
 */
 
+- (IBAction)wedgeStepperObject:(id)sender {
+}
 @end

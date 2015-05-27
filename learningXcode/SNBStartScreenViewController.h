@@ -11,11 +11,4 @@ FOUNDATION_EXPORT UIColor * backgroundColor;
 
 
 @interface SNBStartScreenViewController : UIViewController
-
-
-
-
-
-
-
 @end
