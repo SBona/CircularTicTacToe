@@ -51,15 +51,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    ringStepperObject.value = [[[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfRings"] intValue];
-    wedgeStepperObject.value = [[[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfWedges"] intValue];
-    
-    RingCountDisplay.text = [NSString stringWithFormat: @"%f",ringStepperObject.value];
-    NSLog(@"THE LABEL SHOULD DISPLAY RING COUNT OF %f", ringStepperObject.value);
-    WedgeCountDisplay.text = [NSString stringWithFormat: @"%f",wedgeStepperObject.value];
-    
-    
-    
     [self wedgeStepper: wedgeStepperObject];
     [self ringStepper: ringStepperObject];
 }

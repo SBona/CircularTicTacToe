@@ -70,6 +70,8 @@
                     <connections>
                         <outlet property="RingCountDisplay" destination="ONS-M2-aeh" id="9E9-kk-f7F"/>
                         <outlet property="WedgeCountDisplay" destination="gzf-nG-UNx" id="Qv1-IK-rqL"/>
+                        <outlet property="ringStepperObject" destination="yiZ-7i-22q" id="ZsE-il-ywE"/>
+                        <outlet property="wedgeStepperObject" destination="HJi-QW-Ufx" id="qpq-bL-y7S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1e-O9-5nU" userLabel="First Responder" sceneMemberID="firstResponder"/>
