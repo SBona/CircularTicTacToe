@@ -59,6 +59,7 @@ UIColor *player1Color, *player2Color;
     player1Color = [UIColor player1Color];
     player2Color = [UIColor player2Color];
     
+    self.view.backgroundColor = backgroundColor;
     
     //Do any additional setup after loading the view, typically from a nib.
     //Create Canvas to only encompass the game region so that other elements function

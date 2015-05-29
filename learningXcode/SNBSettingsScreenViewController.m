@@ -7,7 +7,7 @@
 //
 
 #import "SNBSettingsScreenViewController.h"
-
+#import "UIColor+customColors.h"
 
 @interface SNBSettingsScreenViewController ()
 @end
@@ -54,6 +54,10 @@
     
     [self wedgeStepper: wedgeStepperObject];
     [self ringStepper: ringStepperObject];
+    
+    self.view.backgroundColor = [UIColor backgroundColor];
+
+    
 }
 
 - (void)didReceiveMemoryWarning

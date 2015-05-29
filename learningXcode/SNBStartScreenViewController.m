@@ -34,6 +34,9 @@ SNBStartScreenViewController *vSplashScreen;
 {
     [super viewDidLoad];
     
+    
+    self.view.backgroundColor = [UIColor backgroundColor];
+
     //Get the number of rings from the global library
     //NSNumber *ringValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfRings"];
     //if it doesn't exist, set it to the default of 4
