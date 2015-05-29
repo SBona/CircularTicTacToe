@@ -10,10 +10,11 @@
 #import "SNBAppDelegate.h"
 #import "SNBStartScreenViewController.h"
 #import <Foundation/Foundation.h>
-#import "SNBWinningScreenViewController.h"
+#import "SNBStartScreenViewController.h"
+
+#import "UIColor+customColors.h"
 
 extern SNBAppDelegate *vMainApp;
-extern SNBStartScreenViewController *vSplashScreen;
 
 @implementation SNBViewController
 //For each turn, where is the best place to put this?
@@ -54,9 +55,9 @@ UIColor *player1Color, *player2Color;
     height = screenSize.size.height;
     
     //color loading
-    backgroundColor = [UIColor colorWithRed:(255/255.0) green:(248/255.0) blue:(164/255.0) alpha:(1)];
-    player1Color = [UIColor colorWithRed:(226/255.0) green:(80/255.0) blue:(50/255.0) alpha:(1)];
-    player2Color = [UIColor colorWithRed:(31/255.0) green:(139/255.0) blue:(131/255.0) alpha:(1)];;
+    UIColor *backgroundColor = [UIColor backgroundColor];
+    player1Color = [UIColor player1Color];
+    player2Color = [UIColor player2Color];
     
     
     //Do any additional setup after loading the view, typically from a nib.

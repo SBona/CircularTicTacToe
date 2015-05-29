@@ -7,6 +7,7 @@
 //
 
 #import "SNBStartScreenViewController.h"
+#import "UIColor+customColors.h"
 
 UIColor *backgroundColor = nil;
 
@@ -75,7 +76,8 @@ SNBStartScreenViewController *vSplashScreen;
     [circlePath closePath];
     backgroundCircle.path = circlePath.CGPath;
     
-    backgroundCircle.fillColor = [UIColor colorWithRed:(120/255.0) green:(100/255.0) blue:(79/255.0) alpha:(1)].CGColor;    backgroundCircle.strokeColor = NULL;
+    backgroundCircle.fillColor = [UIColor circleColor].CGColor;    backgroundCircle.strokeColor = NULL;
+    
     
     [canvas.layer addSublayer: backgroundCircle];
 }

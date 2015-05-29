@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-FOUNDATION_EXPORT UIColor * backgroundColor;
 
 
 @interface SNBStartScreenViewController : UIViewController

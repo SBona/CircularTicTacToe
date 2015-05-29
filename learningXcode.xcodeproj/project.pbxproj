@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF1CBC551A8C6FB40044205C /* SNBStartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1CBC541A8C6FB40044205C /* SNBStartScreenViewController.m */; };
+		CF1E54D31B18EED4007C3302 /* UIColor+customColors.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1E54D21B18EED4007C3302 /* UIColor+customColors.m */; };
 		CF69CCAC1A436CFE0023BDD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF69CCAB1A436CFE0023BDD7 /* Foundation.framework */; };
 		CF69CCAE1A436CFE0023BDD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF69CCAD1A436CFE0023BDD7 /* CoreGraphics.framework */; };
 		CF69CCB01A436CFE0023BDD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF69CCAF1A436CFE0023BDD7 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		CF1CBC531A8C6FB40044205C /* SNBStartScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNBStartScreenViewController.h; sourceTree = "<group>"; };
 		CF1CBC541A8C6FB40044205C /* SNBStartScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNBStartScreenViewController.m; sourceTree = "<group>"; };
+		CF1E54D11B18EED4007C3302 /* UIColor+customColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+customColors.h"; sourceTree = "<group>"; };
+		CF1E54D21B18EED4007C3302 /* UIColor+customColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+customColors.m"; sourceTree = "<group>"; };
 		CF69CCA81A436CFE0023BDD7 /* learningXcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learningXcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF69CCAB1A436CFE0023BDD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CF69CCAD1A436CFE0023BDD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,6 +132,8 @@
 				CF69CCC61A436CFE0023BDD7 /* Images.xcassets */,
 				CF69CCB21A436CFE0023BDD7 /* Supporting Files */,
 				CF1CBC531A8C6FB40044205C /* SNBStartScreenViewController.h */,
+				CF1E54D11B18EED4007C3302 /* UIColor+customColors.h */,
+				CF1E54D21B18EED4007C3302 /* UIColor+customColors.m */,
 				CF1CBC541A8C6FB40044205C /* SNBStartScreenViewController.m */,
 				CFAFE5B01AC4782D001F1BB7 /* SNBSettingsScreenViewController.h */,
 				CFAFE5B11AC4782D001F1BB7 /* SNBSettingsScreenViewController.m */,
@@ -268,6 +273,7 @@
 				CF1CBC551A8C6FB40044205C /* SNBStartScreenViewController.m in Sources */,
 				CF69CCB81A436CFE0023BDD7 /* main.m in Sources */,
 				CFAFE5B21AC4782D001F1BB7 /* SNBSettingsScreenViewController.m in Sources */,
+				CF1E54D31B18EED4007C3302 /* UIColor+customColors.m in Sources */,
 				CF69CCC51A436CFE0023BDD7 /* SNBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
