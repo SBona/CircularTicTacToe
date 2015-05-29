@@ -34,13 +34,14 @@ SNBStartScreenViewController *vSplashScreen;
     [super viewDidLoad];
     
     //Get the number of rings from the global library
-    NSNumber *ringValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfRings"];
+    //NSNumber *ringValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfRings"];
     //if it doesn't exist, set it to the default of 4
-    if(ringValue == nil)
+    //if(ringValue == nil){
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt: 4] forKey:@"numberOfRings"];
+    
     //Same as above with number of wedges
-    NSNumber *wedgeValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfWedges"];
-    if(wedgeValue == nil)
+   // NSNumber *wedgeValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfWedges"];
+    //if(wedgeValue == nil){
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt: 6] forKey:@"numberOfWedges"];
     
     //Rectangle object to stonre the screen size
@@ -61,7 +62,6 @@ SNBStartScreenViewController *vSplashScreen;
     [self.view addSubview:canvas];
     [self.view sendSubviewToBack:canvas];
     
-    //***********Why isn't this shape visible??************
     
     CAShapeLayer *backgroundCircle = [CAShapeLayer layer];
     UIBezierPath *circlePath = [UIBezierPath bezierPath];
