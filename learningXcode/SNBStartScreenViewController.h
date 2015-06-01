@@ -10,4 +10,9 @@
 
 
 @interface SNBStartScreenViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UIButton *settingsLabel;
+@property (weak, nonatomic) IBOutlet UIButton *playGameLabel;
+
+
 @end

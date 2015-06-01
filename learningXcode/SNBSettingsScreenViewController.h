@@ -24,5 +24,10 @@
 - (IBAction)wedgeStepper:(UIStepper *)sender;
 
 
+@property (weak, nonatomic) IBOutlet UILabel *numRingLabel;
+@property (weak, nonatomic) IBOutlet UILabel *numWedgeLabel;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 
 @end

@@ -21,13 +21,14 @@ UIView *gameOver;
 
 @property(nonatomic,retain) IBOutlet UILabel *WinnerLabel;
 @property(nonatomic,retain) IBOutlet UIView *viewGameOver, *viewGameBoard;
+@property (nonatomic, retain) IBOutlet UISegmentedControl *segmentNumberOfPlayers;
+
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet UIButton *restartButton;
+
 
 
 - (IBAction)Restart:(id)sender;
-
-
-@property (nonatomic, retain) IBOutlet UISegmentedControl *segmentNumberOfPlayers;
-
 - (IBAction)segmentClicked:(UISegmentedControl *)sender;
 
 @end

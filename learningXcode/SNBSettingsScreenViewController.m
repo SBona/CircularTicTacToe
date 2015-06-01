@@ -14,7 +14,7 @@
 
 @implementation SNBSettingsScreenViewController
 
-@synthesize ringStepperObject, wedgeStepperObject, WedgeCountDisplay, RingCountDisplay;
+@synthesize ringStepperObject, wedgeStepperObject, WedgeCountDisplay, RingCountDisplay, numRingLabel, numWedgeLabel, backButton;
 
 
 - (IBAction)wedgeStepper:(UIStepper *)ctrlStepper
@@ -58,6 +58,13 @@
     self.view.backgroundColor = [UIColor backgroundColor];
 
     
+    //Set colors
+    RingCountDisplay.textColor = [UIColor circleColor];
+    WedgeCountDisplay.textColor = [UIColor circleColor];
+    numRingLabel.textColor = [UIColor circleColor];
+    numWedgeLabel.textColor = [UIColor circleColor];
+    [backButton setTitleColor: [UIColor circleColor] forState:(UIControlStateNormal)];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -78,6 +85,4 @@
 }
 */
 
-- (IBAction)wedgeStepperObject:(id)sender {
-}
 @end

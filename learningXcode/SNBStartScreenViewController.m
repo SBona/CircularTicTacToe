@@ -18,7 +18,7 @@ SNBStartScreenViewController *vSplashScreen;
 @end
 @implementation SNBStartScreenViewController
 
-
+@synthesize playGameLabel, settingsLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,13 +34,16 @@ SNBStartScreenViewController *vSplashScreen;
 {
     [super viewDidLoad];
     
-    
     self.view.backgroundColor = [UIColor backgroundColor];
-
+    
+    [playGameLabel setTitleColor: [UIColor player1Color] forState:(UIControlStateNormal)];
+    [settingsLabel setTitleColor: [UIColor player2Color] forState: (UIControlStateNormal)];
+    
     //Get the number of rings from the global library
     //NSNumber *ringValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfRings"];
     //if it doesn't exist, set it to the default of 4
     //if(ringValue == nil){
+    
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt: 4] forKey:@"numberOfRings"];
     
     //Same as above with number of wedges

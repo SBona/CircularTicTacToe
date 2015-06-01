@@ -18,6 +18,8 @@ extern SNBAppDelegate *vMainApp;
 
 @implementation SNBViewController
 //For each turn, where is the best place to put this?
+@synthesize backButton, restartButton;
+
 int currentPlayer;
 
 //Variables
@@ -43,6 +45,8 @@ UIColor *player1Color, *player2Color;
     [super viewDidLoad];
     [self initializeGame];
     
+    
+    
 }
 - (void) initializeGame{
     //Load the data about the game settings
@@ -58,8 +62,11 @@ UIColor *player1Color, *player2Color;
     UIColor *backgroundColor = [UIColor backgroundColor];
     player1Color = [UIColor player1Color];
     player2Color = [UIColor player2Color];
-    
     self.view.backgroundColor = backgroundColor;
+    
+    [backButton setTitleColor: [UIColor circleColor] forState: (UIControlStateNormal)];
+    [restartButton setTitleColor: [UIColor circleColor] forState: (UIControlStateNormal)];
+
     
     //Do any additional setup after loading the view, typically from a nib.
     //Create Canvas to only encompass the game region so that other elements function
@@ -71,7 +78,7 @@ UIColor *player1Color, *player2Color;
     UIView *canvas = [[UIView alloc]initWithFrame:rectForView];
     canvas.backgroundColor = backgroundColor;
     canvas.layer.borderColor = [UIColor grayColor].CGColor;
-    canvas.layer.borderWidth = 1;
+    canvas.layer.borderWidth = 0;
     canvas.clipsToBounds = YES;
     canvas.tag = 99;
     [self.view addSubview:canvas];

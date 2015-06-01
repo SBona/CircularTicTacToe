@@ -61,7 +61,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="sXs-pA-wXa" kind="modal" id="pLD-Wg-AaS"/>
+                                    <segue destination="sXs-pA-wXa" kind="modal" animates="NO" id="pLD-Wg-AaS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -70,6 +70,9 @@
                     <connections>
                         <outlet property="RingCountDisplay" destination="ONS-M2-aeh" id="9E9-kk-f7F"/>
                         <outlet property="WedgeCountDisplay" destination="gzf-nG-UNx" id="Qv1-IK-rqL"/>
+                        <outlet property="backButton" destination="MtO-pG-SOz" id="4Lq-LT-vAa"/>
+                        <outlet property="numRingLabel" destination="RD2-he-okE" id="IB5-sf-7uN"/>
+                        <outlet property="numWedgeLabel" destination="Vba-um-qAP" id="8lB-H3-DtB"/>
                         <outlet property="ringStepperObject" destination="yiZ-7i-22q" id="ZsE-il-ywE"/>
                         <outlet property="wedgeStepperObject" destination="HJi-QW-Ufx" id="qpq-bL-y7S"/>
                     </connections>
@@ -94,6 +97,7 @@
                                 <rect key="frame" x="106" y="268" width="108" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play Game">
+                                    <color key="titleColor" red="0.20936792146648131" green="0.39360653337542539" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -122,12 +126,16 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TAE-rx-ekX" kind="modal" id="r5Z-SL-TQI"/>
+                                    <segue destination="TAE-rx-ekX" kind="modal" animates="NO" id="r5Z-SL-TQI"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="playGameLabel" destination="FeF-Hc-fac" id="dMK-cX-bN7"/>
+                        <outlet property="settingsLabel" destination="gzk-OL-UqO" id="BpN-Au-ohC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvF-bc-H3B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,6 +180,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="ffY-gU-fRV"/>
                     <connections>
+                        <outlet property="backButton" destination="q4T-vr-8Vf" id="BeY-bm-jMf"/>
+                        <outlet property="restartButton" destination="rh5-si-BIK" id="VYW-2K-93a"/>
                         <outlet property="viewGameOver" destination="uIZ-Jo-xaE" id="t8Q-Ei-3sF"/>
                     </connections>
                 </viewController>
@@ -186,6 +196,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="pLD-Wg-AaS"/>
+        <segue reference="sby-Aa-Y9q"/>
     </inferredMetricsTieBreakers>
 </document>
