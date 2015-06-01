@@ -38,15 +38,12 @@ UIColor *player1Color, *player2Color;
 {
     NSLog(@"Restart");
     [self initializeGame];
-
+    winnerLabel.text = @"";
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self initializeGame];
-    
-    
-    
 }
 - (void) initializeGame{
     //Load the data about the game settings

@@ -169,6 +169,9 @@
                                 <state key="normal" title="Restart">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Restart:" destination="vXZ-lx-hvc" eventType="touchDown" id="wdS-wo-PV8"/>
+                                </connections>
                             </button>
                             <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8od-7V-zQk">
                                 <rect key="frame" x="20" y="473" width="284" height="43"/>
