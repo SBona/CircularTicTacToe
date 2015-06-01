@@ -20,7 +20,6 @@
 - (IBAction)wedgeStepper:(UIStepper *)ctrlStepper
 {
     
-    //NSLog(@"New Value = %d", (int)ctrlStepper.value);
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt: (int)ctrlStepper.value] forKey:@"numberOfWedges"];
     
     WedgeCountDisplay.text = [NSString stringWithFormat: @"%d", (int)ctrlStepper.value];
@@ -31,7 +30,6 @@
 
 - (IBAction)ringStepper:(UIStepper *)ctrlStepper
 {
-    NSLog(@"New Value = %d", (int)ctrlStepper.value);
     
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt: (int)ctrlStepper.value] forKey:@"numberOfRings"];
     
@@ -52,8 +50,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self wedgeStepper: wedgeStepperObject];
-    [self ringStepper: ringStepperObject];
+   
     
     self.view.backgroundColor = [UIColor backgroundColor];
 
@@ -65,6 +62,14 @@
     numWedgeLabel.textColor = [UIColor circleColor];
     [backButton setTitleColor: [UIColor circleColor] forState:(UIControlStateNormal)];
     
+    ringStepperObject.tintColor = [UIColor circleColor];
+    wedgeStepperObject.tintColor = [UIColor circleColor];
+
+    ringStepperObject.value = [[[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfRings"] intValue];
+    wedgeStepperObject.value = [[[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfWedges"] intValue];
+    
+    [self wedgeStepper: wedgeStepperObject];
+    [self ringStepper: ringStepperObject];
 }
 
 - (void)didReceiveMemoryWarning

@@ -40,17 +40,17 @@ SNBStartScreenViewController *vSplashScreen;
     [settingsLabel setTitleColor: [UIColor player2Color] forState: (UIControlStateNormal)];
     
     //Get the number of rings from the global library
-    //NSNumber *ringValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfRings"];
+    NSNumber *ringValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfRings"];
     //if it doesn't exist, set it to the default of 4
-    //if(ringValue == nil){
+    if(ringValue == nil){
     
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt: 4] forKey:@"numberOfRings"];
-    
+    }
     //Same as above with number of wedges
-   // NSNumber *wedgeValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfWedges"];
-    //if(wedgeValue == nil){
+    NSNumber *wedgeValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfWedges"];
+    if(wedgeValue == nil){
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt: 6] forKey:@"numberOfWedges"];
-    
+    }
     //Rectangle object to stonre the screen size
     CGRect rc = CGRectMake(0,0,self.view.frame.size.width, self.view.frame.size.height);
     
