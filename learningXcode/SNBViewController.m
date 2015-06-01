@@ -18,7 +18,7 @@ extern SNBAppDelegate *vMainApp;
 
 @implementation SNBViewController
 //For each turn, where is the best place to put this?
-@synthesize backButton, restartButton;
+@synthesize backButton, restartButton, winnerLabel;
 
 int currentPlayer;
 
@@ -150,7 +150,7 @@ UIColor *player1Color, *player2Color;
     UITouch *touch1 = [touches anyObject];
     CGPoint touchLocation = [touch1 locationInView:[self.view viewWithTag:99]];
     
-    NSLog(@"point %f, %f", touchLocation.x, touchLocation.y);
+    //NSLog(@"point %f, %f", touchLocation.x, touchLocation.y);
     
     for(int i = 0; i < [shapeArray count]; i++){
         
@@ -161,7 +161,7 @@ UIColor *player1Color, *player2Color;
             CAShapeLayer *shapeToTest = gcTemp->shapeLayer;
             
             if(CGPathContainsPoint(shapeToTest.path, 0 ,touchLocation, YES)){
-                NSLog(@"You touched the region %d around the circle, and %d in depth", i ,g);
+                //NSLog(@"You touched the region %d around the circle, and %d in depth", i ,g);
                 
                 // 1 for player 1, 2 for player 2
                 if (gcTemp->wState == 0)
@@ -192,6 +192,18 @@ UIColor *player1Color, *player2Color;
 
 - (void) gameWon
 {
+    winnerLabel.text = [NSString stringWithFormat:@"Congradulations Player %d",currentPlayer];
+    
+    if(currentPlayer == 1)
+    {
+        winnerLabel.textColor = [UIColor player1Color];
+    }else{
+        winnerLabel.textColor = [UIColor player2Color];
+    }
+    
+    
+    
+    
     
 }
 //Set up the game over view
