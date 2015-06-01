@@ -126,8 +126,8 @@ UIColor *player1Color, *player2Color;
             
             //Shape Data
             tempShape.lineWidth = 1;
-            tempShape.fillColor = [UIColor colorWithRed:(120/255.0) green:(100/255.0) blue:(79/255.0) alpha:(1)].CGColor;
-            tempShape.strokeColor = backgroundColor.CGColor;
+            tempShape.fillColor = [UIColor circleColor].CGColor;
+            tempShape.strokeColor = [UIColor backgroundColor].CGColor;
             
             //Create new GameCell object
             GameCell *gcTemp = [[GameCell alloc] init];
@@ -202,9 +202,17 @@ UIColor *player1Color, *player2Color;
     }
     
     
-    
-    
-    
+    for(int i = 0; i < [shapeArray count]; i++){
+        
+        for(int j = 0; j < [[shapeArray objectAtIndex:i] count]; j++){
+            GameCell *gcTemp = (GameCell *)[[shapeArray objectAtIndex:i] objectAtIndex:j];
+            
+            if(gcTemp ->wState != currentPlayer){
+                gcTemp->shapeLayer.fillColor = [UIColor backgroundColor].CGColor;
+            }
+            
+        }
+    }
 }
 //Set up the game over view
 - (void) setUpGameOverView
@@ -226,10 +234,10 @@ UIColor *player1Color, *player2Color;
                 UIColor *toColor;
 
                 if(gcTemp->wState == 1){
-                    toColor = player1Color;
+                    toColor = [UIColor player1Color];
                     
                 }else if(gcTemp->wState == 2){
-                    toColor = player2Color;
+                    toColor = [UIColor player2Color];
                 }
                 gcTemp->shapeLayer.fillColor = [toColor CGColor];
                 [CATransaction begin]; {
