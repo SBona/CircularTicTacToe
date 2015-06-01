@@ -67,11 +67,7 @@ UIColor *player1Color, *player2Color;
     [backButton setTitleColor: [UIColor circleColor] forState: (UIControlStateNormal)];
     [restartButton setTitleColor: [UIColor circleColor] forState: (UIControlStateNormal)];
 
-    
-    //Do any additional setup after loading the view, typically from a nib.
-    //Create Canvas to only encompass the game region so that other elements function
-    
-    //interesting error is that the top boundary is in the right location but the bottom one isn't
+    //Make the canvas only the size of circle so elements work
     CGRect rectForView = CGRectMake(0,(height/2)-circleRadius,self.view.frame.size.width, (width/2)+circleRadius);
     
     
@@ -196,48 +192,17 @@ UIColor *player1Color, *player2Color;
 
 - (void) gameWon
 {
-    gameOver = self.viewGameOver;
-    gameOver.hidden = NO;
-    //gameOver.backgroundColor = [UIColor whiteColor];
-    [self.view bringSubviewToFront:gameOver];
     
-    [self.WinnerLabel setText: [NSString stringWithFormat:@"Winner: Player %d", currentPlayer]];
-    
-    [self setUpGameOverView];
-    
-    //[UIView transitionFromView:viewBoard toView:gameOver duration:0.5f options:UIViewAnimationOptionTransitionCrossDissolve completion:NULL];
 }
 //Set up the game over view
 - (void) setUpGameOverView
 {
-    //Circle Drawing
-    CAShapeLayer *backgroundCircle = [CAShapeLayer layer];
-    UIBezierPath *circlePath = [UIBezierPath bezierPath];
-    
-    circlePath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(width/2, height/2)
-                                                radius:[[[NSUserDefaults standardUserDefaults] objectForKey:@"circleRadius" ] intValue ]
-                                            startAngle:0
-                                              endAngle: 2* M_PI
-                                             clockwise:YES];
-    [circlePath closePath];
-    backgroundCircle.path = circlePath.CGPath;
-    
-    backgroundCircle.fillColor = [UIColor grayColor].CGColor;
-    backgroundCircle.strokeColor = NULL;
-    
-    [gameOver.layer addSublayer:backgroundCircle];
     
 }
 
 
 //Update the colors method
 - (void) updateDrawing{
-    
-    //get the colors from the nsuserdefaults
-    //NSArray *bCAR = [[NSUserDefaults standardUserDefaults] objectForKey:@"backgroundColor"];
-    //UIColor *backgroundColor;
-    //backgroundColor = [UIColor colorWithRed:(bCAR[0]) blue:(bCAR[1]) green:(bCAR[2]) alpha:(1)];
-    
     
     for(int i = 0; i < [shapeArray count]; i++){
         for(int j = 0; j < [[shapeArray objectAtIndex:i] count];j++){
@@ -265,16 +230,7 @@ UIColor *player1Color, *player2Color;
                     fillColorAnimation.autoreverses = NO;
                     [gcTemp->shapeLayer addAnimation:fillColorAnimation forKey:@"fillColor"];
                 } [CATransaction commit];
-                
-//                CABasicAnimation* shrink = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-//                shrink.toValue = [NSNumber numberWithDouble:2.0];
-//                shrink.duration = 0.5;
-//                shrink.delegate = self;
-//                shrink.autoreverses = YES;
-//                
-//                [gcTemp->shapeLayer addAnimation:shrink forKey:@"shrink"];
-//                
-                //fillColorAnimation.
+ 
             }
         }
     }

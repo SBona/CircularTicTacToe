@@ -1,0 +1,22 @@
+gameOver = self.viewGameOver;
+    gameOver.hidden = NO;
+    //gameOver.backgroundColor = [UIColor whiteColor];
+    [self.view bringSubviewToFront:gameOver];
+    
+    [self.WinnerLabel setText: [NSString stringWithFormat:@"Winner: Player %d", currentPlayer]];
+    
+    [self setUpGameOverView];
+    
+    //[UIView transitionFromView:viewBoard toView:gameOver duration:0.5f options:UIViewAnimationOptionTransitionCrossDissolve completion:NULL];
+    
+    
+                   
+//                CABasicAnimation* shrink = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+//                shrink.toValue = [NSNumber numberWithDouble:2.0];
+//                shrink.duration = 0.5;
+//                shrink.delegate = self;
+//                shrink.autoreverses = YES;
+//                
+//                [gcTemp->shapeLayer addAnimation:shrink forKey:@"shrink"];
+//                
+                //fillColorAnimation.

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CF1CBC551A8C6FB40044205C /* SNBStartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1CBC541A8C6FB40044205C /* SNBStartScreenViewController.m */; };
 		CF1E54D31B18EED4007C3302 /* UIColor+customColors.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1E54D21B18EED4007C3302 /* UIColor+customColors.m */; };
+		CF1E54D51B1D1237007C3302 /* scrapCode in Resources */ = {isa = PBXBuildFile; fileRef = CF1E54D41B1D1237007C3302 /* scrapCode */; };
 		CF69CCAC1A436CFE0023BDD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF69CCAB1A436CFE0023BDD7 /* Foundation.framework */; };
 		CF69CCAE1A436CFE0023BDD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF69CCAD1A436CFE0023BDD7 /* CoreGraphics.framework */; };
 		CF69CCB01A436CFE0023BDD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF69CCAF1A436CFE0023BDD7 /* UIKit.framework */; };
@@ -42,6 +43,7 @@
 		CF1CBC541A8C6FB40044205C /* SNBStartScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNBStartScreenViewController.m; sourceTree = "<group>"; };
 		CF1E54D11B18EED4007C3302 /* UIColor+customColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+customColors.h"; sourceTree = "<group>"; };
 		CF1E54D21B18EED4007C3302 /* UIColor+customColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+customColors.m"; sourceTree = "<group>"; };
+		CF1E54D41B1D1237007C3302 /* scrapCode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scrapCode; sourceTree = "<group>"; };
 		CF69CCA81A436CFE0023BDD7 /* learningXcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learningXcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF69CCAB1A436CFE0023BDD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CF69CCAD1A436CFE0023BDD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,6 +95,7 @@
 		CF69CC9F1A436CFE0023BDD7 = {
 			isa = PBXGroup;
 			children = (
+				CF1E54D41B1D1237007C3302 /* scrapCode */,
 				CF69CCB11A436CFE0023BDD7 /* learningXcode */,
 				CF69CCD31A436CFF0023BDD7 /* learningXcodeTests */,
 				CF69CCAA1A436CFE0023BDD7 /* Frameworks */,
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF69CCC21A436CFE0023BDD7 /* Main_iPad.storyboard in Resources */,
+				CF1E54D51B1D1237007C3302 /* scrapCode in Resources */,
 				CF69CCC71A436CFE0023BDD7 /* Images.xcassets in Resources */,
 				CF69CCBF1A436CFE0023BDD7 /* Main_iPhone.storyboard in Resources */,
 				CF69CCB61A436CFE0023BDD7 /* InfoPlist.strings in Resources */,
