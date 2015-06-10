@@ -27,6 +27,7 @@ UIView *gameOver;
 
 @property (weak, nonatomic) IBOutlet UILabel *winnerLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *playerTurnIndicator;
 
 - (IBAction)Restart:(id)sender;
 - (IBAction)segmentClicked:(UISegmentedControl *)sender;

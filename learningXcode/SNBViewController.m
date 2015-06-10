@@ -18,7 +18,7 @@ extern SNBAppDelegate *vMainApp;
 
 @implementation SNBViewController
 //For each turn, where is the best place to put this?
-@synthesize backButton, restartButton, winnerLabel;
+@synthesize backButton, restartButton, winnerLabel, playerTurnIndicator;
 
 int currentPlayer;
 
@@ -140,6 +140,7 @@ UIColor *player1Color, *player2Color;
         [shapeArray addObject:(secondaryArray)];
         
     }
+    [self setIndicatorColor];
 }
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -147,6 +148,7 @@ UIColor *player1Color, *player2Color;
     UITouch *touch1 = [touches anyObject];
     CGPoint touchLocation = [touch1 locationInView:[self.view viewWithTag:99]];
     
+    [self setIndicatorColor];
     //NSLog(@"point %f, %f", touchLocation.x, touchLocation.y);
     
     for(int i = 0; i < [shapeArray count]; i++){
@@ -185,6 +187,20 @@ UIColor *player1Color, *player2Color;
         }
     }
     [self updateDrawing];
+}
+//Set indicator color and text
+- (void) setIndicatorColor
+{
+    playerTurnIndicator.text = [NSString stringWithFormat:@"Player %d Turn", currentPlayer];
+
+    if(currentPlayer == 1)
+    {
+        playerTurnIndicator.textColor = [UIColor player1Color];
+    }
+    else if(currentPlayer == 2)
+    {
+        playerTurnIndicator.textColor = [UIColor player2Color];
+    }
 }
 
 - (void) gameWon
@@ -297,22 +313,23 @@ UIColor *player1Color, *player2Color;
             NSMutableArray *tempArray = [shapeArray objectAtIndex: i];
             GameCell *thisCell = [tempArray objectAtIndex: j];
             int player = thisCell->wState;
-            GameCell *nextCell = [[shapeArray objectAtIndex: (i+1)%6] objectAtIndex: j];
+            GameCell *nextCell = [[shapeArray objectAtIndex: (i+1)%numberofWedges] objectAtIndex: j];
             int nextState =nextCell->wState;
                 
-                NSLog(@"j = %d, i = %d",j,i);
             if(player != 0)
                 {
-            if(player == nextState)
-                {
-                    cInRow++;
-                    if(cInRow == (winningWedgeCount -1)){
-                        return player;
+                    if(player == nextState)
+                    {
+                        cInRow++;
+                        if(cInRow == (winningWedgeCount -1))
+                        {
+                            return player;
+                        }
                     }
-                }
-            else
-                cInRow = 0;
-                
+                    else
+                    {
+                        cInRow = 0;
+                    }
                 }
             }
         }

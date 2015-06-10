@@ -184,12 +184,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player x Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGg-gi-qkg">
+                                <rect key="frame" x="44" y="43" width="221" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ffY-gU-fRV"/>
                     <connections>
                         <outlet property="backButton" destination="q4T-vr-8Vf" id="BeY-bm-jMf"/>
+                        <outlet property="playerTurnIndicator" destination="QGg-gi-qkg" id="CaS-qw-kzj"/>
                         <outlet property="restartButton" destination="rh5-si-BIK" id="VYW-2K-93a"/>
                         <outlet property="winnerLabel" destination="8od-7V-zQk" id="elQ-1y-H7r"/>
                     </connections>
@@ -205,6 +213,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="pLD-Wg-AaS"/>
+        <segue reference="sby-Aa-Y9q"/>
     </inferredMetricsTieBreakers>
 </document>
