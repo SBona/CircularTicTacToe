@@ -169,11 +169,11 @@ UIColor *player1Color, *player2Color;
                     gcTemp->wState = currentPlayer;
                     NSLog(@" Player state %d %d", currentPlayer, gcTemp->wState);
                     //If the game has been won, run gameWon method
-                    if([self checkForVerticalWinner] != 0 || [self checkForHorizontalWinner] != 0 || [self checkForDiagonalWinner: 1]|| [self checkForDiagonalWinner: -1])
-                        {
-                            [self gameWon];
-                            
-                    }
+//                    if([self checkForVerticalWinner] != 0 || [self checkForHorizontalWinner] != 0 || [self checkForDiagonalWinner: 1]|| [self checkForDiagonalWinner: -1])
+//                    {
+//                        [self gameWon];
+//                            
+//                    }
                     if (currentPlayer == 1)
                         {
                         currentPlayer = 2;
@@ -269,119 +269,6 @@ UIColor *player1Color, *player2Color;
     }
 }
 //Check for victory functions
-- (int)checkForVerticalWinner{
-    
-    for(int i = 0; i < shapeArray.count; i++)
-        {
-        NSMutableArray *tempArray = [shapeArray objectAtIndex: i];
-        
-        GameCell *cell = (GameCell *)[tempArray objectAtIndex: 0];
-        int player = cell->wState;
-        int bWon = true;
-        //if the cell state isn't empty
-        if(player != 0)
-            {
-            //Check the array
-            for(int j = 0; j < tempArray.count; j++)
-                {
-                GameCell *thisCell = (GameCell *)[tempArray objectAtIndex: j];
-                int thisState = thisCell->wState;
-                //if the shape isn't the same as the player who just clicked, break out of this function
-                if(player != thisState)
-                    {
-                    bWon = false;
-                    break;
-                    }
-            
-                }
-            //otherwise return the player who has won
-            if(bWon)
-                {
-                return player;
-                }
-            }
-        }
-    return 0;
-}
-- (int) checkForHorizontalWinner{
-    
-    for(int j = 0; j < numberofRings; j++)
-        {
-        int cInRow = 0;
-        for(int i = 0; i < numberofWedges; i++)
-            {
-            NSMutableArray *tempArray = [shapeArray objectAtIndex: i];
-            GameCell *thisCell = [tempArray objectAtIndex: j];
-            int player = thisCell->wState;
-            GameCell *nextCell = [[shapeArray objectAtIndex: (i+1)%numberofWedges] objectAtIndex: j];
-            int nextState =nextCell->wState;
-                
-            if(player != 0)
-                {
-                    if(player == nextState)
-                    {
-                        cInRow++;
-                        if(cInRow == (winningWedgeCount -1))
-                        {
-                            return player;
-                        }
-                    }
-                    else
-                    {
-                        cInRow = 0;
-                    }
-                }
-            }
-        }
-    return 0;
-}
-//Potentially use this method for all victory checks by changing offset x and y accordingly
-- (int) checkForDiagonalWinner: (int) direction{
-    
-    for(int i = 0; i < numberofWedges; i++)
-        {
-        int cInRow = 0;
-        GameCell *thisCell = [[shapeArray objectAtIndex: i] objectAtIndex: 0];
-        int thisState = thisCell->wState;
-        //Set the direction which is changed depending on the direction parameter
-        int offsety = 1, offsetx = 0;
-            if(direction == 1){
-                offsetx = 1;
-            }else if(direction == -1){
-                offsetx = (numberofWedges-1);
-            }
-        //if the place clicked isn't playerless
-        if(thisState != 0)
-            {
-                //Loop while the winner hasn't been found yet
-                for(int j = 0; j < (winningWedgeCount-1); j++)
-                    {
-                    
-                    GameCell *nextCell = [[shapeArray objectAtIndex: ((i + offsetx)%numberofWedges)] objectAtIndex: offsety] ;
-                    int nextState = nextCell->wState;
-                        //if the state matches the previous one, continue
-                        if(thisState == nextState)
-                            {
-                            cInRow++;
-                            //if the victory condition has been fulfilled, return winning player
-                            if(cInRow == (winningWedgeCount -1))
-                                {
-                                return thisState;
-                                }
-                            //offset the current wedge pointer
-                            offsetx += direction;
-                                //if the pointer points to a negative value, set to the max value
-                                if(offsetx < 0){
-                                    offsetx = (numberofWedges-1);
-                                }
-                            offsety ++;
-                            }
-                    }
-            }
-        }
-    
-    return 0;
-}
 
 - (IBAction)segmentClicked:(UISegmentedControl *)sender
 {
