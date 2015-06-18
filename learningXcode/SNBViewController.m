@@ -174,6 +174,20 @@ UIColor *player1Color, *player2Color;
 //                        [self gameWon];
 //                            
 //                    }
+                    if([self checkForWinner: 0:1] != 0 ){
+                       // [self gameWon];
+                    }
+                    if([self checkForWinner: 1:0] != 0 ){
+                     //   [self gameWon];
+                    }
+                    if([self checkForWinner: 1:1] != 0 ){
+                        //[self gameWon];
+                    }
+                    if([self checkForWinner: -1:1] != 0 ){
+                        //[self gameWon];
+                    }
+                    
+                    
                     if (currentPlayer == 1)
                         {
                         currentPlayer = 2;
@@ -188,6 +202,71 @@ UIColor *player1Color, *player2Color;
     }
     [self updateDrawing];
 }
+//This method works by looping through all gamecells and for each cell using a while loop to continue counting until there are no longer shapes wh
+//ich match
+- (int) checkForWinner: (int) offsetX: (int) offsetY;
+{
+    
+    for(int i = 0; i < numberofWedges; i++)
+    {
+        
+        for(int j = 0; i < numberofRings; j++)
+        {
+            
+            GameCell *startCell = [[shapeArray objectAtIndex: i] objectAtIndex: j];
+            //if the first cell is empty, go to next cell
+            if(startCell->wState == 0) {
+                break;
+            }
+            
+            int rowCount = 0;
+            int localX = i;
+            int localY = j;
+            
+            while (rowCount < (winningWedgeCount-1
+                               )){
+                localX += offsetX;
+                localY += offsetY;
+                
+                //if the x offset is greater than the number of rings mosulous it to reduce
+                localX = localX % numberofWedges;
+
+                
+                if(localY > (numberofRings-1)s){
+                    break;
+                }
+                
+                
+                GameCell *localCell = [[shapeArray objectAtIndex: localX] objectAtIndex: localY];
+                
+                //if the streak ends, break to next wedge
+                if(startCell->wState != localCell->wState)
+                {
+                    break;
+                }
+                else
+                {
+                    rowCount++;
+                }
+                
+                
+            }
+            if(rowCount == winningWedgeCount -1){
+                return currentPlayer;
+            }
+            
+            
+        }
+        
+        
+    }
+    
+    
+    return 0;
+}
+
+
+
 //Set indicator color and text
 - (void) setIndicatorColor
 {
