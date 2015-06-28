@@ -148,7 +148,6 @@ UIColor *player1Color, *player2Color;
     UITouch *touch1 = [touches anyObject];
     CGPoint touchLocation = [touch1 locationInView:[self.view viewWithTag:99]];
     
-    [self setIndicatorColor];
     //NSLog(@"point %f, %f", touchLocation.x, touchLocation.y);
     
     for(int i = 0; i < [shapeArray count]; i++){
@@ -175,31 +174,36 @@ UIColor *player1Color, *player2Color;
                             
                     }
                     if (currentPlayer == 1)
-                        {
+                    {
                         currentPlayer = 2;
-                        }
+                    }
                     else
-                        {
+                    {
                         currentPlayer = 1;
-                        }
+                    }
                 }
             }
         }
     }
     [self updateDrawing];
+    [self setIndicatorColor];
+
 }
 //Set indicator color and text
 - (void) setIndicatorColor
 {
-    playerTurnIndicator.text = [NSString stringWithFormat:@"Player %d Turn", currentPlayer];
+    //playerTurnIndicator.text = [NSString stringWithFormat:@"Player %d Turn", currentPlayer];
 
     if(currentPlayer == 1)
     {
         playerTurnIndicator.textColor = [UIColor player1Color];
+        playerTurnIndicator.text = @"Player 1 Turn";
     }
     else if(currentPlayer == 2)
     {
         playerTurnIndicator.textColor = [UIColor player2Color];
+        playerTurnIndicator.text = @"Player 2 Turn";
+
     }
 }
 
