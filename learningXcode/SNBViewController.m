@@ -169,7 +169,7 @@ UIColor *player1Color, *player2Color;
                     gcTemp->wState = currentPlayer;
                     NSLog(@" Player state %d %d", currentPlayer, gcTemp->wState);
                     
-                    if([self checkForWinner:1 second:0] != 0 )
+                    if([self checkForWinner:0 second:1] != 0 )
                     {
                         [self gameWon];
                     }
