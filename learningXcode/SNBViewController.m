@@ -192,8 +192,6 @@ UIColor *player1Color, *player2Color;
 //Set indicator color and text
 - (void) setIndicatorColor
 {
-    //playerTurnIndicator.text = [NSString stringWithFormat:@"Player %d Turn", currentPlayer];
-
     if(currentPlayer == 1)
     {
         playerTurnIndicator.textColor = [UIColor player1Color];
@@ -203,7 +201,6 @@ UIColor *player1Color, *player2Color;
     {
         playerTurnIndicator.textColor = [UIColor player2Color];
         playerTurnIndicator.text = @"Player 2 Turn";
-
     }
 }
 
@@ -236,7 +233,6 @@ UIColor *player1Color, *player2Color;
 {
     
 }
-
 
 //Update the colors method
 - (void) updateDrawing{
@@ -318,14 +314,14 @@ UIColor *player1Color, *player2Color;
             GameCell *thisCell = [tempArray objectAtIndex: j];
             int player = thisCell->wState;
             GameCell *nextCell = [[shapeArray objectAtIndex: (i+1)%numberofWedges] objectAtIndex: j];
-            int nextState =nextCell->wState;
+            int nextState = nextCell->wState;
                 
             if(player != 0)
                 {
                     if(player == nextState)
                     {
                         cInRow++;
-                        if(cInRow == (winningWedgeCount -1))
+                        if(cInRow == (winningWedgeCount - 1))
                         {
                             return player;
                         }
@@ -339,6 +335,8 @@ UIColor *player1Color, *player2Color;
         }
     return 0;
 }
+
+
 //Potentially use this method for all victory checks by changing offset x and y accordingly
 - (int) checkForDiagonalWinner: (int) direction{
     
