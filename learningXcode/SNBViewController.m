@@ -205,7 +205,7 @@ UIColor *player1Color, *player2Color;
 {
     for(int i = 0; i < numberofWedges; i++)
     {
-        for(int j = 0; i < numberofRings; j++)
+        for(int j = 0; j < numberofRings; j++)
         {
             GameCell *startCell = [[shapeArray objectAtIndex: i] objectAtIndex: j];
             
