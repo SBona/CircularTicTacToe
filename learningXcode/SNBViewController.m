@@ -173,15 +173,15 @@ UIColor *player1Color, *player2Color;
                     {
                         [self gameWon];
                     }
-//                    if([self checkForWinner: 1 second:0] != 0 ){
-//                        [self gameWon];
-//                    }
-//                    if([self checkForWinner: 1 second:1] != 0 ){
-//                        [self gameWon];
-//                    }
-//                    if([self checkForWinner: -1  second :1] != 0 ){
-//                        [self gameWon];
-//                    }
+                    if([self checkForWinner: 1 second:0] != 0 ){
+                        [self gameWon];
+                    }
+                    if([self checkForWinner: 1 second:1] != 0 ){
+                        [self gameWon];
+                    }
+                    if([self checkForWinner: -1  second :1] != 0 ){
+                        [self gameWon];
+                    }
                     
                     if (currentPlayer == 1)
                     {
@@ -207,6 +207,7 @@ UIColor *player1Color, *player2Color;
     {
         for(int j = 0; j < numberofRings; j++)
         {
+            NSLog(@"Start X=%d, Y=%d", (int)i, (int)j);
             GameCell *startCell = [[shapeArray objectAtIndex: i] objectAtIndex: j];
             
             //if the first cell is empty, go to next cell
@@ -217,19 +218,23 @@ UIColor *player1Color, *player2Color;
             
             int rowCount = 0;
             //suntract one from number of wedges because array spots are 0-5, not 1-6
-            int localX = (i + offsetX)%(numberofWedges-1);
+            int localX = (i + offsetX)%numberofWedges;
             int localY = j + offsetY;
             //subtract one because the first wedge isnt counted
             while (rowCount < (winningWedgeCount-1))
             {
                 //if the x offset is greater than the number of rings modulous it to reduce
-                localX = localX % (numberofWedges-1);
+                localX = localX % numberofWedges;
+                if(localX == -1)
+                {
+                    localX = numberofWedges-1;
+                }
                 //if the local y index is not on the board
-                if(localY > (numberofRings-1) || (localY < numberofRings-1))
+                if(localY >= numberofRings || (localY < 0))
                 {
                     break;
                 }
-                
+                NSLog(@"LocalCell X=%d, Y=%d", (int)localX, (int)localY);
                 GameCell *localCell = [[shapeArray objectAtIndex: localX] objectAtIndex: localY];
                 
                 //if the streak ends, break to next wedge
