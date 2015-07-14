@@ -44,6 +44,10 @@ UIColor *player1Color, *player2Color;
 {
     [super viewDidLoad];
     [self initializeGame];
+    
+    
+    [self.navigationController setNavigationBarHidden: NO animated:YES];
+
 }
 - (void) initializeGame{
     //Load the data about the game settings

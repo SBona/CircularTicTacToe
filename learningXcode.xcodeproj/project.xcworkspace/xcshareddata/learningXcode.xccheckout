@@ -10,29 +10,29 @@
 	<string>learningXcode</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4ADB4AE0-B38C-4900-8611-533773AF476D</key>
+		<key>CB14FA40DB16042DDFE9E334D5373FDCF4212814</key>
 		<string>https://github.com/SBona/CircularTicTacToe.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>learningXcode.xcodeproj/project.xcworkspace</string>
+	<string>learningXcode.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4ADB4AE0-B38C-4900-8611-533773AF476D</key>
+		<key>CB14FA40DB16042DDFE9E334D5373FDCF4212814</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/SBona/CircularTicTacToe.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4ADB4AE0-B38C-4900-8611-533773AF476D</string>
+	<string>CB14FA40DB16042DDFE9E334D5373FDCF4212814</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4ADB4AE0-B38C-4900-8611-533773AF476D</string>
+			<string>CB14FA40DB16042DDFE9E334D5373FDCF4212814</string>
 			<key>IDESourceControlWCCName</key>
 			<string>learningXcode</string>
 		</dict>
