@@ -348,7 +348,6 @@ UIColor *player1Color, *player2Color;
     }
 }
 //Check for victory functions
-<<<<<<< HEAD
 - (int)checkForVerticalWinner{
     
     for(int i = 0; i < shapeArray.count; i++)
@@ -464,8 +463,6 @@ UIColor *player1Color, *player2Color;
     
     return 0;
 }
-=======
->>>>>>> NewWinDetection
 
 - (IBAction)segmentClicked:(UISegmentedControl *)sender
 {

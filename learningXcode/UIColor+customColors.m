@@ -16,7 +16,7 @@
 }
 + (UIColor *) backgroundColor
 {
-    return [UIColor colorWithRed:(245/255.0) green:(228/255.0) blue:(164/255.0) alpha:(1)];
+    return [UIColor colorWithRed:(245/255.0) green:(215/255.0) blue:(164/255.0) alpha:(1)];
 }
 + (UIColor *) player1Color
 {
