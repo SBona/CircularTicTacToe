@@ -10,13 +10,13 @@
 		CF1CBC551A8C6FB40044205C /* SNBStartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1CBC541A8C6FB40044205C /* SNBStartScreenViewController.m */; };
 		CF1E54D31B18EED4007C3302 /* UIColor+customColors.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1E54D21B18EED4007C3302 /* UIColor+customColors.m */; };
 		CF1E54D51B1D1237007C3302 /* scrapCode in Resources */ = {isa = PBXBuildFile; fileRef = CF1E54D41B1D1237007C3302 /* scrapCode */; };
+		CF3B52B71B55B44900074FB4 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3B52B51B55B44900074FB4 /* Main_iPhone.storyboard */; };
 		CF69CCAC1A436CFE0023BDD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF69CCAB1A436CFE0023BDD7 /* Foundation.framework */; };
 		CF69CCAE1A436CFE0023BDD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF69CCAD1A436CFE0023BDD7 /* CoreGraphics.framework */; };
 		CF69CCB01A436CFE0023BDD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF69CCAF1A436CFE0023BDD7 /* UIKit.framework */; };
 		CF69CCB61A436CFE0023BDD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF69CCB41A436CFE0023BDD7 /* InfoPlist.strings */; };
 		CF69CCB81A436CFE0023BDD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF69CCB71A436CFE0023BDD7 /* main.m */; };
 		CF69CCBC1A436CFE0023BDD7 /* SNBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF69CCBB1A436CFE0023BDD7 /* SNBAppDelegate.m */; };
-		CF69CCBF1A436CFE0023BDD7 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF69CCBD1A436CFE0023BDD7 /* Main_iPhone.storyboard */; };
 		CF69CCC21A436CFE0023BDD7 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF69CCC01A436CFE0023BDD7 /* Main_iPad.storyboard */; };
 		CF69CCC51A436CFE0023BDD7 /* SNBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF69CCC41A436CFE0023BDD7 /* SNBViewController.m */; };
 		CF69CCC71A436CFE0023BDD7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF69CCC61A436CFE0023BDD7 /* Images.xcassets */; };
@@ -44,6 +44,7 @@
 		CF1E54D11B18EED4007C3302 /* UIColor+customColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+customColors.h"; sourceTree = "<group>"; };
 		CF1E54D21B18EED4007C3302 /* UIColor+customColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+customColors.m"; sourceTree = "<group>"; };
 		CF1E54D41B1D1237007C3302 /* scrapCode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scrapCode; sourceTree = "<group>"; };
+		CF3B52B61B55B44900074FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		CF69CCA81A436CFE0023BDD7 /* learningXcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learningXcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF69CCAB1A436CFE0023BDD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CF69CCAD1A436CFE0023BDD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +55,6 @@
 		CF69CCB91A436CFE0023BDD7 /* learningXcode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "learningXcode-Prefix.pch"; sourceTree = "<group>"; };
 		CF69CCBA1A436CFE0023BDD7 /* SNBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNBAppDelegate.h; sourceTree = "<group>"; };
 		CF69CCBB1A436CFE0023BDD7 /* SNBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNBAppDelegate.m; sourceTree = "<group>"; };
-		CF69CCBE1A436CFE0023BDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		CF69CCC11A436CFE0023BDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		CF69CCC31A436CFE0023BDD7 /* SNBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNBViewController.h; sourceTree = "<group>"; };
 		CF69CCC41A436CFE0023BDD7 /* SNBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNBViewController.m; sourceTree = "<group>"; };
@@ -126,10 +126,10 @@
 		CF69CCB11A436CFE0023BDD7 /* learningXcode */ = {
 			isa = PBXGroup;
 			children = (
+				CF3B52B51B55B44900074FB4 /* Main_iPhone.storyboard */,
+				CF69CCC01A436CFE0023BDD7 /* Main_iPad.storyboard */,
 				CF69CCBA1A436CFE0023BDD7 /* SNBAppDelegate.h */,
 				CF69CCBB1A436CFE0023BDD7 /* SNBAppDelegate.m */,
-				CF69CCBD1A436CFE0023BDD7 /* Main_iPhone.storyboard */,
-				CF69CCC01A436CFE0023BDD7 /* Main_iPad.storyboard */,
 				CF69CCC31A436CFE0023BDD7 /* SNBViewController.h */,
 				CF69CCC41A436CFE0023BDD7 /* SNBViewController.m */,
 				CF69CCC61A436CFE0023BDD7 /* Images.xcassets */,
@@ -252,8 +252,8 @@
 			files = (
 				CF69CCC21A436CFE0023BDD7 /* Main_iPad.storyboard in Resources */,
 				CF1E54D51B1D1237007C3302 /* scrapCode in Resources */,
+				CF3B52B71B55B44900074FB4 /* Main_iPhone.storyboard in Resources */,
 				CF69CCC71A436CFE0023BDD7 /* Images.xcassets in Resources */,
-				CF69CCBF1A436CFE0023BDD7 /* Main_iPhone.storyboard in Resources */,
 				CF69CCB61A436CFE0023BDD7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,20 +301,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CF3B52B51B55B44900074FB4 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF3B52B61B55B44900074FB4 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
 		CF69CCB41A436CFE0023BDD7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CF69CCB51A436CFE0023BDD7 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CF69CCBD1A436CFE0023BDD7 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF69CCBE1A436CFE0023BDD7 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		CF69CCC01A436CFE0023BDD7 /* Main_iPad.storyboard */ = {

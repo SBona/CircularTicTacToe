@@ -49,19 +49,17 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"Settings";
     
-   
-    
-    self.view.backgroundColor = [UIColor backgroundColor];
-
+    [self.navigationController setNavigationBarHidden: NO animated:YES];
     
     //Set colors
+    self.view.backgroundColor = [UIColor backgroundColor];
     RingCountDisplay.textColor = [UIColor circleColor];
     WedgeCountDisplay.textColor = [UIColor circleColor];
     numRingLabel.textColor = [UIColor circleColor];
     numWedgeLabel.textColor = [UIColor circleColor];
     [backButton setTitleColor: [UIColor circleColor] forState:(UIControlStateNormal)];
-    
     ringStepperObject.tintColor = [UIColor circleColor];
     wedgeStepperObject.tintColor = [UIColor circleColor];
 

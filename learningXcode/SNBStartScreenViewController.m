@@ -33,6 +33,8 @@ SNBStartScreenViewController *vSplashScreen;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //Hide the navigation bar for the root view controller
+    [self.navigationController setNavigationBarHidden: YES animated:YES];
     
     self.view.backgroundColor = [UIColor backgroundColor];
     

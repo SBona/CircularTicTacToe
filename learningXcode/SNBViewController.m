@@ -44,6 +44,10 @@ UIColor *player1Color, *player2Color;
 {
     [super viewDidLoad];
     [self initializeGame];
+    
+    
+    [self.navigationController setNavigationBarHidden: NO animated:YES];
+
 }
 - (void) initializeGame{
     //Load the data about the game settings
@@ -164,15 +168,25 @@ UIColor *player1Color, *player2Color;
                 // 1 for player 1, 2 for player 2
                 if (gcTemp->wState == 0)
                 {
+                    
                     gcTemp->dirty = 1;
                     gcTemp->wState = currentPlayer;
                     NSLog(@" Player state %d %d", currentPlayer, gcTemp->wState);
-                    //If the game has been won, run gameWon method
-                    if([self checkForVerticalWinner] != 0 || [self checkForHorizontalWinner] != 0 || [self checkForDiagonalWinner: 1]|| [self checkForDiagonalWinner: -1])
-                        {
-                            [self gameWon];
-                            
+                    
+                    if([self checkForWinner:0 second:1] != 0 )
+                    {
+                        [self gameWon];
                     }
+                    if([self checkForWinner: 1 second:0] != 0 ){
+                        [self gameWon];
+                    }
+                    if([self checkForWinner: 1 second:1] != 0 ){
+                        [self gameWon];
+                    }
+                    if([self checkForWinner: -1  second :1] != 0 ){
+                        [self gameWon];
+                    }
+                    
                     if (currentPlayer == 1)
                     {
                         currentPlayer = 2;
@@ -181,6 +195,11 @@ UIColor *player1Color, *player2Color;
                     {
                         currentPlayer = 1;
                     }
+
+
+                    [self setIndicatorColor];
+
+
                 }
             }
         }
@@ -189,6 +208,66 @@ UIColor *player1Color, *player2Color;
     [self setIndicatorColor];
 
 }
+//This method works by looping through all gamecells and for each cell using a while loop to continue counting until there are no longer shapes wh
+//ich match
+- (int) checkForWinner: (int) offsetX second: (int) offsetY
+{
+    for(int i = 0; i < numberofWedges; i++)
+    {
+        for(int j = 0; j < numberofRings; j++)
+        {
+            NSLog(@"Start X=%d, Y=%d", (int)i, (int)j);
+            GameCell *startCell = [[shapeArray objectAtIndex: i] objectAtIndex: j];
+            
+            //if the first cell is empty, go to next cell
+            if(startCell->wState == 0)
+            {
+                break;
+            }
+            
+            int rowCount = 0;
+            //suntract one from number of wedges because array spots are 0-5, not 1-6
+            int localX = (i + offsetX)%numberofWedges;
+            int localY = j + offsetY;
+            //subtract one because the first wedge isnt counted
+            while (rowCount < (winningWedgeCount-1))
+            {
+                //if the x offset is greater than the number of rings modulous it to reduce
+                localX = localX % numberofWedges;
+                if(localX == -1)
+                {
+                    localX = numberofWedges-1;
+                }
+                //if the local y index is not on the board
+                if(localY >= numberofRings || (localY < 0))
+                {
+                    break;
+                }
+                NSLog(@"LocalCell X=%d, Y=%d", (int)localX, (int)localY);
+                GameCell *localCell = [[shapeArray objectAtIndex: localX] objectAtIndex: localY];
+                
+                //if the streak ends, break to next wedge
+                if(startCell->wState == localCell->wState)
+                {
+                    rowCount++;
+                    localX += offsetX;
+                    localY += offsetY;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            if(rowCount == winningWedgeCount -1){
+                return currentPlayer;
+            }
+        }
+    }
+    return 0;
+}
+
+
+
 //Set indicator color and text
 - (void) setIndicatorColor
 {
@@ -269,6 +348,7 @@ UIColor *player1Color, *player2Color;
     }
 }
 //Check for victory functions
+<<<<<<< HEAD
 - (int)checkForVerticalWinner{
     
     for(int i = 0; i < shapeArray.count; i++)
@@ -384,6 +464,8 @@ UIColor *player1Color, *player2Color;
     
     return 0;
 }
+=======
+>>>>>>> NewWinDetection
 
 - (IBAction)segmentClicked:(UISegmentedControl *)sender
 {

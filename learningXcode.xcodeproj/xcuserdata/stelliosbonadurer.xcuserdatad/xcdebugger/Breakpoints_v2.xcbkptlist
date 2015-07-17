@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBViewController.m"
-            timestampString = "454892734.179097"
+            timestampString = "458603260.791299"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "-initializeGame"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,12 +26,21 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBViewController.m"
+<<<<<<< HEAD
             timestampString = "457217765.419572"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "201"
             endingLineNumber = "201"
             landmarkName = "-setIndicatorColor"
+=======
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "-touchesBegan:withEvent:"
+>>>>>>> NewWinDetection
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,11 +51,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBViewController.m"
+<<<<<<< HEAD
             timestampString = "457217684.077533"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "170"
             endingLineNumber = "170"
+=======
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+>>>>>>> NewWinDetection
             landmarkName = "-touchesBegan:withEvent:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,6 +75,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBViewController.m"
+<<<<<<< HEAD
             timestampString = "457217857.612944"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -65,6 +83,15 @@
             endingLineNumber = "348"
             landmarkName = "-checkForDiagonalWinner:"
             landmarkType = "5">
+=======
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "346"
+            endingLineNumber = "346"
+            landmarkName = "@implementation SNBViewController"
+            landmarkType = "3">
+>>>>>>> NewWinDetection
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,11 +101,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBStartScreenViewController.m"
-            timestampString = "454889222.483923"
+            timestampString = "458603178.054383"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -86,7 +113,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBStartScreenViewController.m"
@@ -122,11 +149,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBStartScreenViewController.m"
-            timestampString = "454889222.483923"
+            timestampString = "458603178.054383"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -174,7 +201,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
-            endingLineNumber = "15">
+            endingLineNumber = "15"
+            landmarkName = "@interface SNBStartScreenViewController()"
+            landmarkType = "2">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -184,12 +213,21 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBViewController.m"
+<<<<<<< HEAD
             timestampString = "457217857.612944"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "335"
             endingLineNumber = "335"
             landmarkName = "-checkForHorizontalWinner"
+=======
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "333"
+            endingLineNumber = "333"
+            landmarkName = "-updateDrawing"
+>>>>>>> NewWinDetection
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -200,12 +238,21 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBViewController.m"
+<<<<<<< HEAD
             timestampString = "457217857.612944"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "327"
             endingLineNumber = "327"
             landmarkName = "-checkForHorizontalWinner"
+=======
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "325"
+            endingLineNumber = "325"
+            landmarkName = "-updateDrawing"
+>>>>>>> NewWinDetection
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -216,12 +263,21 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBViewController.m"
+<<<<<<< HEAD
             timestampString = "457217857.612944"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "317"
             endingLineNumber = "317"
             landmarkName = "-checkForHorizontalWinner"
+=======
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "315"
+            endingLineNumber = "315"
+            landmarkName = "-updateDrawing"
+>>>>>>> NewWinDetection
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -232,11 +288,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBViewController.m"
-            timestampString = "454892734.179097"
+            timestampString = "458603260.791299"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "-initializeGame"
             landmarkType = "5">
          </BreakpointContent>
@@ -248,11 +304,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBViewController.m"
-            timestampString = "454892734.179097"
+            timestampString = "458603260.791299"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "-initializeGame"
             landmarkType = "5">
          </BreakpointContent>
@@ -264,11 +320,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBViewController.m"
-            timestampString = "454892734.179097"
+            timestampString = "458603260.791299"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "-initializeGame"
             landmarkType = "5">
          </BreakpointContent>
@@ -308,11 +364,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBStartScreenViewController.m"
-            timestampString = "454889117.198212"
+            timestampString = "458603178.054383"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -324,6 +380,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningXcode/SNBViewController.m"
+<<<<<<< HEAD
             timestampString = "457217857.612944"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -362,7 +419,121 @@
             startingLineNumber = "171"
             endingLineNumber = "171"
             landmarkName = "-touchesBegan:withEvent:"
+=======
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
+            landmarkName = "-gameWon"
+>>>>>>> NewWinDetection
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "learningXcode/SNBViewController.m"
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "-checkForWinner:second:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "learningXcode/SNBViewController.m"
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "-touchesBegan:withEvent:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "learningXcode/SNBViewController.m"
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
+            landmarkName = "-checkForWinner:second:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "learningXcode/SNBViewController.m"
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "-checkForWinner:second:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "learningXcode/SNBViewController.m"
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "-checkForWinner:second:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "learningXcode/SNBViewController.m"
+            timestampString = "458603260.791299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
+            landmarkName = "-checkForWinner:second:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
