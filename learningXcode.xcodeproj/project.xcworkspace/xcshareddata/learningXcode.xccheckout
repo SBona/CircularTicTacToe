@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A9C74930-9E86-4B46-AC31-BD0DE66B5F5F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>learningXcode</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CB14FA40DB16042DDFE9E334D5373FDCF4212814</key>
 		<string>https://github.com/SBona/CircularTicTacToe.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>learningXcode.xcodeproj</string>
+	<string>learningXcode.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CB14FA40DB16042DDFE9E334D5373FDCF4212814</key>

@@ -45,7 +45,7 @@
 		CF1E54D21B18EED4007C3302 /* UIColor+customColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+customColors.m"; sourceTree = "<group>"; };
 		CF1E54D41B1D1237007C3302 /* scrapCode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scrapCode; sourceTree = "<group>"; };
 		CF3B52B61B55B44900074FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		CF69CCA81A436CFE0023BDD7 /* learningXcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learningXcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF69CCA81A436CFE0023BDD7 /* cttt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cttt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF69CCAB1A436CFE0023BDD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CF69CCAD1A436CFE0023BDD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CF69CCAF1A436CFE0023BDD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -106,7 +106,7 @@
 		CF69CCA91A436CFE0023BDD7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF69CCA81A436CFE0023BDD7 /* learningXcode.app */,
+				CF69CCA81A436CFE0023BDD7 /* cttt.app */,
 				CF69CCCC1A436CFF0023BDD7 /* learningXcodeTests.xctest */,
 			);
 			name = Products;
@@ -190,7 +190,7 @@
 			);
 			name = learningXcode;
 			productName = learningXcode;
-			productReference = CF69CCA81A436CFE0023BDD7 /* learningXcode.app */;
+			productReference = CF69CCA81A436CFE0023BDD7 /* cttt.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CF69CCCB1A436CFF0023BDD7 /* learningXcodeTests */ = {
@@ -221,6 +221,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Stellios Bonadurer";
 				TargetAttributes = {
+					CF69CCA71A436CFE0023BDD7 = {
+						DevelopmentTeam = 2BC2P4BULL;
+					};
 					CF69CCCB1A436CFF0023BDD7 = {
 						TestTargetID = CF69CCA71A436CFE0023BDD7;
 					};
@@ -413,10 +416,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "learningXcode/learningXcode-Prefix.pch";
 				INFOPLIST_FILE = "learningXcode/learningXcode-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cttt;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -426,10 +433,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "learningXcode/learningXcode-Prefix.pch";
 				INFOPLIST_FILE = "learningXcode/learningXcode-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cttt;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

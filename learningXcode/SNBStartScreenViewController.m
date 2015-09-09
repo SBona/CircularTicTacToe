@@ -15,10 +15,11 @@ SNBStartScreenViewController *vSplashScreen;
 
 @interface SNBStartScreenViewController ()
 
+
 @end
 @implementation SNBStartScreenViewController
 
-@synthesize playGameLabel, settingsLabel;
+@synthesize playGameLabel, settingsLabel, aboutButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,6 +41,7 @@ SNBStartScreenViewController *vSplashScreen;
     
     [playGameLabel setTitleColor: [UIColor player1Color] forState:(UIControlStateNormal)];
     [settingsLabel setTitleColor: [UIColor player2Color] forState: (UIControlStateNormal)];
+    [aboutButton setTitleColor: [UIColor player2Color] forState: (UIControlStateNormal)];
     
     //Get the number of rings from the global library
     NSNumber *ringValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"numberOfRings"];

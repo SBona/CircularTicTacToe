@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *settingsLabel;
 @property (weak, nonatomic) IBOutlet UIButton *playGameLabel;
+@property (weak, nonatomic) IBOutlet UIButton *aboutButton;
 
 
 @end
